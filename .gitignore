@@ -1,0 +1,50 @@
+# Build output
+build/
+out/
+.gradle/
+.kotlin/
+.externalNativeBuild/
+.cxx/
+captures/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+# Native/Go build products (generated into jniLibs by the build)
+*.so
+*.a
+*.aar
+app/src/main/jniLibs/
+
+# Local machine configuration
+local.properties
+*.iml
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*~
+
+# Secrets and signing material — never commit
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+keystore.properties
+signing.properties
+secrets.properties
+.env
+.env.*
+google-services.json
+*.authkey
+tsnet-state*/
+
+# Logs and temporary files
+*.log
+*.tmp
+tmp/
+
+# Native dependencies fetched by scripts/openvpn3-deps.sh
+third_party/

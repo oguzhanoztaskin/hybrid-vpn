@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hybridvpn.local/schemas/policy.v1.schema.json",
+  "title": "Hybrid VPN policy, version 1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "transports": {
+      "type": "array",
+      "description": "Named transports routes may use, besides the implicit \"direct\". The id carries identity (e.g. one per tailnet).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "type"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._:-]{0,63}$",
+            "not": {
+              "enum": [
+                "direct",
+                "block"
+              ]
+            }
+          },
+          "type": {
+            "enum": [
+              "direct",
+              "tailnet",
+              "socks5",
+              "http",
+              "openvpn"
+            ]
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "default": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "route": {
+          "type": "string",
+          "default": "direct"
+        },
+        "on_failure": {
+          "type": "string",
+          "default": "block",
+          "description": "\"block\" or a route id"
+        }
+      }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "priority",
+          "action"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "priority": {
+            "type": "integer",
+            "description": "Lower runs first; ties broken by id"
+          },
+          "enabled": {
+            "type": "boolean",
+            "default": true
+          },
+          "description": {
+            "type": "string"
+          },
+          "match": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "apps": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Package names; \"@unknown\" matches unattributed flows"
+              },
+              "domain_lists": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Filter list ids or \"@all\""
+              },
+              "domains": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Each matches itself and subdomains"
+              },
+              "destination_cidrs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "protocol": {
+                "enum": [
+                  "tcp",
+                  "udp",
+                  "icmp",
+                  "icmpv6"
+                ]
+              },
+              "ports": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[0-9]{1,5}(-[0-9]{1,5})?$"
+                }
+              },
+              "networks": {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "wifi",
+                    "cellular",
+                    "ethernet",
+                    "other"
+                  ]
+                }
+              },
+              "network_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "profiles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "action": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "type"
+            ],
+            "properties": {
+              "type": {
+                "enum": [
+                  "block",
+                  "route"
+                ]
+              },
+              "route": {
+                "type": "string",
+                "description": "\"direct\" or a declared transport id. Route rules may not match domains."
+              },
+              "on_failure": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

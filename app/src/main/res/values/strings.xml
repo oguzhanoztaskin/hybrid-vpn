@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Hybrid VPN</string>
+    <string name="vpn_notification_title">DNS firewall active</string>
+    <string name="vpn_starting">Starting…</string>
+    <string name="vpn_running_detail">%1$d rules · %2$s</string>
+    <string name="vpn_revoked">Another VPN took over, or VPN permission was revoked.</string>
+    <string name="action_stop">Stop</string>
+    <string name="channel_vpn">VPN status</string>
+    <string name="channel_devices">New devices</string>
+    <plurals name="new_devices">
+        <item quantity="one">%1$d new device on %2$s</item>
+        <item quantity="other">%1$d new devices on %2$s</item>
+    </plurals>
+</resources>

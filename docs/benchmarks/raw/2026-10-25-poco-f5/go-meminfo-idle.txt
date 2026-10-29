@@ -1,0 +1,2 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 536964215 Realtime: 1280686108

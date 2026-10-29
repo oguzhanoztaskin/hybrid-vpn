@@ -1,0 +1,73 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 4548600 Realtime: 4548600
+
+** MEMINFO in pid 11885 [com.oguzhanstech.hybridvpn] **
+                   Pss  Private  Private     Swap      Rss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty    Total     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------   ------
+  Native Heap    10942    10888        0        0    14884    24448    18673     1713
+  Dalvik Heap    33118    32988        0        0    40944    36428    18246    18182
+ Dalvik Other    10603     4908        0        0    16888                           
+        Stack     1444     1444        0        0     1448                           
+    Other dev       12        0       12        0      312                           
+     .so mmap     2125      324       20        0    45928                           
+    .jar mmap     2716        0      104        0    49708                           
+    .apk mmap     6468      792     5456        0     8124                           
+    .ttf mmap      966        0      652        0     1520                           
+    .dex mmap    31207    31196        0        0    32120                           
+    .oat mmap       37        0        0        0     1936                           
+    .art mmap     8212     7952        0        0    24236                           
+   Other mmap     3163       32       88        0     8240                           
+        Memfd       11        0        0        0      604                           
+      Unknown     2257     2140      104        0     3996                           
+        TOTAL   113281    92664     6436        0   250888    60876    36919    19895
+ 
+ App Summary
+                       Pss(KB)                        Rss(KB)
+                        ------                         ------
+           Java Heap:    40940                          65180
+         Native Heap:    10888                          14884
+                Code:    38668                         150840
+               Stack:     1444                           1448
+            Graphics:        0                              0
+       Private Other:     7160
+              System:    14181
+             Unknown:                                   18536
+ 
+           TOTAL PSS:   113281            TOTAL RSS:   250888      TOTAL SWAP (KB):        0
+ 
+ Objects
+               Views:       11         ViewRootImpl:        1
+         AppContexts:        6           Activities:        1
+              Assets:       23        AssetManagers:        0
+       Local Binders:       27        Proxy Binders:       57
+       Parcel memory:        8         Parcel count:       32
+    Death Recipients:        0             WebViews:        0
+ 
+ Native Allocations
+                         Count                       Total(kB)
+                        ------                         ------
+    Other (malloced):      543                             50
+ Other (nonmalloced):       91                             65
+   Bitmap (malloced):        8                             15
+ 
+ Mapped Bitmaps
+                         Count                       Size(KB)
+                        ------                         ------
+              Mapped:        0                              0
+              Unique:        0                              0
+ 
+ SQL
+         MEMORY_USED:      198
+  PAGECACHE_OVERFLOW:       62          MALLOC_SIZE:       46
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b) cache hits cache misses cache size  Dbname
+PER CONNECTION STATS
+         4       84             32     2    29     3  /data/user/0/com.oguzhanstech.hybridvpn/databases/hybridvpn.db
+         4        8                    0     0     0    (attached) temp
+         4       84             77    14    23     5  /data/user/0/com.oguzhanstech.hybridvpn/databases/hybridvpn.db (1)
+POOL STATS
+     cache hits  cache misses    cache size  Dbname
+             16            56             8  /data/user/0/com.oguzhanstech.hybridvpn/databases/hybridvpn.db
+ 

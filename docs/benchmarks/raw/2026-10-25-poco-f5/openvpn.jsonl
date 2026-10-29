@@ -1,0 +1,6 @@
+{"label": "ovpn-mtu16384", "mtu": 16384, "dir": "down", "mbit": 141, "app_cpu_ms": 2530, "system_busy_ms": 8610, "syscalls_r": 70668, "syscalls_w": 64870}
+{"label": "ovpn-mtu16384", "mtu": 16384, "dir": "up", "mbit": 281, "app_cpu_ms": 2410, "system_busy_ms": 4740, "syscalls_r": 82359, "syscalls_w": 76608}
+{"label": "ovpn-mtu16384", "mtu": 16384, "dir": "down", "mbit": 117, "app_cpu_ms": 3150, "system_busy_ms": 8820, "syscalls_r": 74561, "syscalls_w": 68313}
+{"label": "ovpn-mtu16384", "mtu": 16384, "dir": "up", "mbit": 235, "app_cpu_ms": 3160, "system_busy_ms": 4770, "syscalls_r": 88733, "syscalls_w": 82463}
+{"label": "ovpn-mtu16384", "mtu": 16384, "dir": "down", "mbit": 79, "app_cpu_ms": 3560, "system_busy_ms": 10430, "syscalls_r": 72741, "syscalls_w": 66689}
+{"label": "ovpn-mtu16384", "mtu": 16384, "dir": "up", "mbit": 232, "app_cpu_ms": 3150, "system_busy_ms": 4840, "syscalls_r": 87573, "syscalls_w": 81459}

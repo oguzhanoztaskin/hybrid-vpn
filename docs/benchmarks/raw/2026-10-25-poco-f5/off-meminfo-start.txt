@@ -1,0 +1,62 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 536513122 Realtime: 1280235015
+
+** MEMINFO in pid 16834 [com.oguzhanstech.hybridvpn] **
+                   Pss  Private  Private  SwapPss      Rss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty    Total     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------   ------
+  Native Heap     9550     9436       56       85    10528    25584    18606     2644
+  Dalvik Heap     3318     3260        4       91     4012    10767     4623     6144
+ Dalvik Other    11823     4036        0        0    19812                           
+        Stack     1308     1308        0        0     1312                           
+       Ashmem       66        0        0        0      744                           
+      Gfx dev     2200     2200        0        0     2204                           
+    Other dev       52       12       24        0      564                           
+     .so mmap     9331      296     3668        5    49660                           
+    .jar mmap     3123        0      548        0    51444                           
+    .apk mmap    18646     2928    15308        0    20264                           
+    .ttf mmap      765        0      460        0     1212                           
+    .dex mmap    31889    31880        0        0    32688                           
+    .oat mmap       26        0        0        0     2192                           
+    .art mmap     8884     7420      624       65    16704                           
+   Other mmap      187       36       40        0     1332                           
+   EGL mtrack    41104    41104        0        0    41104                           
+    GL mtrack     2624     2624        0        0     2624                           
+      Unknown     2200     2056       88        5     2672                           
+        TOTAL   147347   108596    20820      251   261072    36351    23229     8788
+ 
+ App Summary
+                       Pss(KB)                        Rss(KB)
+                        ------                         ------
+           Java Heap:    11304                          20716
+         Native Heap:     9436                          10528
+                Code:    55220                         173160
+               Stack:     1308                           1312
+            Graphics:    45928                          45932
+       Private Other:     6220
+              System:    17931
+             Unknown:                                    9424
+ 
+           TOTAL PSS:   147347            TOTAL RSS:   261072       TOTAL SWAP PSS:      251
+ 
+ Objects
+               Views:       10         ViewRootImpl:        1
+         AppContexts:        5           Activities:        1
+              Assets:       56        AssetManagers:        0
+       Local Binders:       21        Proxy Binders:       64
+       Parcel memory:        7         Parcel count:       28
+    Death Recipients:        2             WebViews:        0
+ 
+ SQL
+         MEMORY_USED:      188
+  PAGECACHE_OVERFLOW:       54          MALLOC_SIZE:       46
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b) cache hits cache misses cache size  Dbname
+PER CONNECTION STATS
+         4       84             17     0    23     1  /data/user/0/com.oguzhanstech.hybridvpn/databases/hybridvpn.db
+         4        8                    0     0     0    (attached) temp
+         4       84             55     7    22     4  /data/user/0/com.oguzhanstech.hybridvpn/databases/hybridvpn.db (1)
+POOL STATS
+     cache hits  cache misses    cache size  Dbname
+              7            49            56  /data/user/0/com.oguzhanstech.hybridvpn/databases/hybridvpn.db

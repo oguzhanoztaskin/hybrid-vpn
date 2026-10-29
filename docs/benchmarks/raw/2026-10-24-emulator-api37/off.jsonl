@@ -1,0 +1,15 @@
+{"attempts":200,"failures":0,"label":"off","max_ms":9.839,"mean_ms":4.009589999999998,"mode":"dns","name":"example.org","ok":200,"p50_ms":3.636,"p90_ms":5.148,"p99_ms":6.069,"time":"2026-10-24T05:46:02Z","uncached":false}
+{"attempts":50,"failures":0,"label":"off","max_ms":23.179,"mean_ms":13.073559999999997,"mode":"dns","name":"example.net","ok":50,"p50_ms":12.705,"p90_ms":13.867,"p99_ms":20.073,"time":"2026-10-24T05:46:02Z","uncached":true}
+{"attempts":40,"failures":0,"handshake_p50_ms":3.294,"handshake_p99_ms":6.104,"label":"off","max_ms":509.444,"mean_ms":349.5492,"mode":"connect","ok":40,"p50_ms":503.84,"p90_ms":507.013,"p99_ms":508.774,"time":"2026-10-24T05:46:17Z"}
+{"attempts":200,"first_ms":501.578,"label":"off","max_ms":501.578,"mean_ms":2.91122,"mode":"rtt","ok":200,"p50_ms":0.303,"p90_ms":0.654,"p99_ms":2.088,"time":"2026-10-24T05:46:17Z"}
+{"bytes":134217728,"label":"off","mbit_per_s":255.0261642187308,"mode":"tcp-down","seconds":4.210320252,"time":"2026-10-24T05:46:21Z"}
+{"bytes":134217728,"label":"off","mbit_per_s":167.6398281319508,"mode":"tcp-up","seconds":6.405052045,"time":"2026-10-24T05:46:28Z"}
+{"goodput_mbit_per_s":214.73944915519667,"label":"off","loss_pct":0,"mode":"udp","offered_mbit_per_s":214.73944915519667,"received":20000,"send_errors":0,"send_seconds":0.894106792,"sent":20000,"size":1200,"time":"2026-10-24T05:46:30Z"}
+{"bytes":134217728,"label":"off","mbit_per_s":255.34496739363814,"mode":"tcp-down","seconds":4.2050635849999995,"time":"2026-10-24T05:46:34Z"}
+{"bytes":134217728,"label":"off","mbit_per_s":162.1329031182748,"mode":"tcp-up","seconds":6.622602836,"time":"2026-10-24T05:46:41Z"}
+{"goodput_mbit_per_s":203.1370477561096,"label":"off","loss_pct":0,"mode":"udp","offered_mbit_per_s":203.1370477561096,"received":20000,"send_errors":0,"send_seconds":0.945174709,"sent":20000,"size":1200,"time":"2026-10-24T05:46:43Z"}
+{"bytes":134217728,"label":"off","mbit_per_s":233.50436969823966,"mode":"tcp-down","seconds":4.598380002,"time":"2026-10-24T05:46:47Z"}
+{"bytes":134217728,"label":"off","mbit_per_s":170.66134426863667,"mode":"tcp-up","seconds":6.291652211,"time":"2026-10-24T05:46:54Z"}
+{"goodput_mbit_per_s":215.34467243342576,"label":"off","loss_pct":0,"mode":"udp","offered_mbit_per_s":215.34467243342576,"received":20000,"send_errors":0,"send_seconds":0.891593917,"sent":20000,"size":1200,"time":"2026-10-24T05:46:56Z"}
+{"mode": "idle", "label": "off", "minutes": 5.01, "cpu_ms_per_min": 12.0, "voluntary_switches_per_min": 20.0, "involuntary_switches_per_min": 7.0, "threads": 32}
+{"mode":"transition","label":"off","wifi_off_to_connect_ms":866,"wifi_off_to_dns_ms":1077,"after_wifi_on_connect_ms":133,"tun_up_on_cellular":"false","tun_up_after":"n/a","bulk_flow":{"bytes":1073741824,"label":"bg","mbit_per_s":175.36842074625187,"mode":"tcp-down","seconds":48.982220148,"time":"2026-10-24T05:53:50Z"}}
